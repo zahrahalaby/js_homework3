@@ -1,0 +1,69 @@
+// task5 
+
+const fruits = ["apple", "banana", "cherry", "date"];
+
+const index = fruits.indexOf("banana");
+
+if (index !== -1) {
+    fruits.splice(index, 1, "blueberry", "blackberry");
+}
+console.log(fruits);
+
+
+//task 6
+
+const colors = ["red", "orange", "yellow", "green", "blue"];
+
+const orangeIndex = colors.indexOf("orange");
+const yellowIndex = colors.indexOf("yellow");
+
+const newcolors = colors.slice(orangeIndex,yellowIndex);
+
+console.log(fruits);
+
+
+// task 7 
+
+const animals1 = ["cat", "dog"];
+const animals2 = ["lion", "tiger"];
+
+const animals3 = animals1.concat(animals2);
+
+console.log(animals3);
+
+//task8 
+
+const numbers = [7, 3, 9, 1, 5];
+
+console.log(numbers.sort());
+
+// task9
+
+const letters = ["a", "b", "c", "d"];
+
+letters.sort(function(a, b) {
+	return b - a;
+});
+
+console.log(letters);
+
+// task10
+
+const sentence = "JavaScript is awesome";
+
+sentence.split(' ');
+
+console.log(sentence);
+
+
+// task11
+
+const words = ["Hello", "world"];
+
+words.join('');
+
+console.log(words);
+
+
+
+
