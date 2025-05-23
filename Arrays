@@ -1,69 +1,44 @@
-// task5 
+//Task3_Arrays , names : zahra halaby + ahmad aboud
+
+
+
+//1. HW-Task5
 
 const fruits = ["apple", "banana", "cherry", "date"];
 
-const index = fruits.indexOf("banana");
+console.log(fruits.splice(1,1,"blueberry","blackberry"));
 
-if (index !== -1) {
-    fruits.splice(index, 1, "blueberry", "blackberry");
-}
-console.log(fruits);
-
-
-//task 6
+//2. HW Task6
 
 const colors = ["red", "orange", "yellow", "green", "blue"];
 
-const orangeIndex = colors.indexOf("orange");
-const yellowIndex = colors.indexOf("yellow");
-
-const newcolors = colors.slice(orangeIndex,yellowIndex);
-
-console.log(fruits);
+console.log(colors.slice(1,3));
 
 
-// task 7 
+//3. HW Task7
 
 const animals1 = ["cat", "dog"];
 const animals2 = ["lion", "tiger"];
 
-const animals3 = animals1.concat(animals2);
+const allAnimals = animals1.concat(animals2);
+console.log(allAnimals);
 
-console.log(animals3);
-
-//task8 
+//4. HW Task 8
 
 const numbers = [7, 3, 9, 1, 5];
-
 console.log(numbers.sort());
 
-// task9
+//5. HW Task 9
 
 const letters = ["a", "b", "c", "d"];
+console.log(letters.reverse());
 
-letters.sort(function(a, b) {
-	return b - a;
-});
-
-console.log(letters);
-
-// task10
+//6. HW Task 10
 
 const sentence = "JavaScript is awesome";
+console.log(sentence.split(' '));
 
-sentence.split(' ');
+//7. HW Task 11
 
-console.log(sentence);
-
-
-// task11
-
-const words = ["Hello", "world"];
-
-words.join('');
-
-console.log(words);
-
-
-
-
+const words = ["Hello" , "world"];
+console.log(words.join(" "));
